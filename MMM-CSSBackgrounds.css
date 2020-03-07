@@ -125,10 +125,6 @@ html.particles .particle-4:after {
   }
 }
 
-
-
-
-
 /* 
 Fireflies by Mike Golus https://codepen.io/mikegolus/pen/Jegvym
 */
@@ -1293,6 +1289,48 @@ html.animatedgradient body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+
+/*
+Animated Backgrounc Color Change by 404ryannotfound
+*/
+html.animatedbgcolor {
+animation: colorchange 50s ease infinite;
+-webkit-animation: colorchange 50s ease infinite;
+/* Safari and Chrome - necessary duplicate */
+
+}
+
+@keyframes colorchange
+    {
+  0% {background: #e8630a;}
+  10% {background: #EA3281;}
+  20% {background: #E71669;}
+  30% {background: #661BAC;}
+  40% {background: #FDC600;}
+  50% {background: #75AC25;}
+  60% {background: #3283B5;}
+  70% {background: #0A5D9A;}
+  80% {background: #232F37;}
+  90% {background: #1B2735;}
+  100% {background: #e8630a;}
+    }
+
+@-webkit-keyframes colorchange 
+/* Safari and Chrome - necessary duplicate */
+    {
+  0% {background: #e8630a;}
+  10% {background: #EA3281;}
+  20% {background: #E71669;}
+  30% {background: #661BAC;}
+  40% {background: #FDC600;}
+  50% {background: #75AC25;}
+  60% {background: #3283B5;}
+  70% {background: #0A5D9A;}
+  80% {background: #232F37;}
+  90% {background: #1B2735;}
+  100% {background: #e8630a;}
 }
 
 /*
