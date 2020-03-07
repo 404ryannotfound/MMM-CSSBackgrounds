@@ -36,7 +36,9 @@ Module.register("MMM-CSSBackgrounds", {
 		"risingstars"   : { 
 			"effectPrefix" : "risingstars"},	// Parallax stars rising from the bottom
 		"animatedgradient"   : { 
-			"effectPrefix" : "animatedgradient"},	// Colourful ever changing background color
+			"effectPrefix" : "animatedgradient"},	// Colourful ever changing gradient background color
+		"animatedbgcolor"   : { 
+			"effectPrefix" : "animatedbgcolor"},	// Colourful ever changing background color (9 colors)
 		"slidingdiagonal"   : { 
 			"effectPrefix" : "slidingdiagonal"},	// 3 layers sliding left/right on a diagnonal
 		"lavalamp"   : { 
