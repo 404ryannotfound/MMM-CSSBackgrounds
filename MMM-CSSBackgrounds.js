@@ -76,7 +76,7 @@ Module.register("MMM-CSSBackgrounds", {
 		return this.config;
 	}
 	/*
-	NOTE: getDom is breaking... even as an empty function ¯\_(?)_/¯
+	NOTE: getDom is breaking... even as an empty function Â¯\_(?)_/Â¯
 	,
     	getDom: function() {
 		var themeSettings = this.themes[this.config.theme];
@@ -88,7 +88,9 @@ Module.register("MMM-CSSBackgrounds", {
 		let html = document.getElementsByTagName("html")[0];
 		let body = document.getElementsByTagName("body")[0];
 		body.classList.add(themeSettings.effectPrefix);
-		html.classList.add(themeSettings.effectPrefix);	
+		html.classList.add(themeSettings.effectPrefix);
+		
+		return wrapper;
 	}*/
 
 });
