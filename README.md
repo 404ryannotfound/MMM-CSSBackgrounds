@@ -33,14 +33,13 @@ bubbles|Small bubbles rising from the bottom| Link coming soon...
 This module requires no special dependencies. 
 
 ## Operation
-This module will take in a list of directory paths, one or more, containing image files. The module will display those images in either alphabetical or random order, across either each path one at time or across all the paths at once. Once all the images have been shown, it will loop back and start again.
-
-Extra configurations include setting the amount of time an image is shown for, selecting which file extensions are valid, the transition speed from one image to another, the background sizing, whether or not to animate the transition from one to the other, the gradient used to make the text more readable, and the gradient opacity.
+This module simply adds CSS classes to the Magic Mirror `index.html` template, and uses minimal markup to create the animated backgrounds.
 
 ## Installation
 
-To install, clone this repo into ```~/MagicMirror/modules``` directory. Then move in the folder and install required libraries
+To install, cd into the `modules` directory, clone, cd into the newly created `MMM-CSSBackgrounds` directory, then install.
 ```
+cd MagicMirror/modules
 git clone https://github.com/404ryannotfound/MMM-CSSBackgrounds.git
 cd MMM-CSSBackgrounds
 npm install
@@ -52,11 +51,12 @@ Download the zip file https://github.com/404ryannotfound/MMM-CSSBackgrounds/arch
 ## Loading the module
 Once downloaded, add the module to the modules array in the ```config/config.js``` file:
 
+### Example:
 ```
 modules: [
    {
    module: "MMM-CSSBackgrounds", 
-   position: "top_center",
+   position: "fullscreen_below",
    config: {
     text: "Hello world =)!" 
   }   
@@ -66,7 +66,7 @@ modules: [
 
 ## Contributing
 
-Contributors are more than welcome! Please read [CONTRIBUTING.md](https://gist.github.com/404ryannotfound/0ca9e2841326f3b115b437008fec5233) for details on our code of conduct, and the process for submitting pull requests to us.
+Contributors are more than welcome! :hugs: Please read [CONTRIBUTING.md](https://gist.github.com/404ryannotfound/0ca9e2841326f3b115b437008fec5233) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
