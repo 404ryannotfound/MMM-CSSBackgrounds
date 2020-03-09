@@ -27,7 +27,6 @@ Module.register("MMM-CSSBackgrounds", {
 
 	requiresVersion: "2.1.0", // Required version of MagicMirror
 
-
 	themes: {
 		"particles" : { 
 			"effectPrefix"  : "particles"},		// Lots of floating colorful particles    
