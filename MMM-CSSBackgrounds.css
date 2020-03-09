@@ -1892,8 +1892,7 @@ Sliding Diagonal by Chris Smith https://codepen.io/chris22smith/pen/RZogMa (Slig
 
 html.slidingdiagonal .bg {
   animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, rgb(256,256,256, 0.1) 50%, rgb(256,256,256, 0.05) 50%);
-  bottom:0;
+  background-image: linear-gradient(-60deg, #090A0F 50%, #111D2B 50%);
   left:-50%;
   opacity:.5;
   position:fixed;
