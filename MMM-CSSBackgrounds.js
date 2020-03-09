@@ -17,6 +17,8 @@
 
 Module.register("MMM-CSSBackgrounds", {
 
+	config:null,
+
 	// Default module config.
 	defaults: {
 		text: "Hello World!",
@@ -28,7 +30,7 @@ Module.register("MMM-CSSBackgrounds", {
 
 	themes: {
 		"particles" : { 
-			"effectPrefix"  : "particles"},		// Lots of small floating particles    
+			"effectPrefix"  : "particles"},		// Lots of floating colorful particles    
 		"fireflies"   : { 
 			"effectPrefix" : "fireflies"},		// Lots of small floating insects		 
 		"rain"   : { 
@@ -50,14 +52,27 @@ Module.register("MMM-CSSBackgrounds", {
 		"risingcubes"   : { 
 			"effectPrefix" : "risingcubes"},	// Slowly spinning cubes from the bottom
 		"tritravelers"   : { 
-			"effectPrefix" : "tritravelers"},	// Small triangles floating towards the center		
+			"effectPrefix" : "tritravelers"},	// Small triangles floating towards the center	
+		"snowflakes"   : { 
+			"effectPrefix" : "snowflakes"},		// A scattering of snow falling from te top	
 		"bubbles"   : { 
-			"effectPrefix" : "bubbles"}		// Small bubbles rising from the bottom	
+			"effectPrefix" : "bubbles"},		// Small bubbles rising from the bottom	
+		"blobs"   : { 
+			"effectPrefix" : "blobs"}		// Two blobs animatying on the screen
 	
 	},
 
+	init: function(){
+		Log.log(this.name + " is in initialising...");
+	},
+	
 	start: function() {
-		Log.log("Starting module: " + this.name);
+		Log.log(this.name + " is starting...");
+	},
+	
+	loaded: function(callback) {
+		Log.log(this.name + " has loaded.");
+		callback();
 	},
 
 	getScripts: function() {
@@ -70,29 +85,63 @@ Module.register("MMM-CSSBackgrounds", {
 		];
 	},
 
-	getTemplate: function () {
-		return "MMM-CSSBackgrounds.njk";
-	},
-
-	getTemplateData: function () {
-		return this.config;
-	}
-	/*
-	NOTE: getDom is breaking... even as an empty function ¯\_(?)_/¯
-	,
-    	getDom: function() {
-		var themeSettings = this.themes[this.config.theme];
+	// this is the major worker of the module, it provides the displayable content for this module
+	getDom: function() {
 		var wrapper = document.createElement("div");
 		
-		wrapper.className = themeSettings.effectPrefix;
-		
-		// Target html and body and add CSS classes
-		let html = document.getElementsByTagName("html")[0];
-		let body = document.getElementsByTagName("body")[0];
-		body.classList.add(themeSettings.effectPrefix);
-		html.classList.add(themeSettings.effectPrefix);
-		
-		return wrapper;
-	}*/
+		var theme = this.config.theme;
+				
+		var root = document.getElementsByTagName( 'html' )[0];
 
+		// if user selected a theme in config, use it
+		if(this.config.hasOwnProperty("theme")){
+                        wrapper.className = this.config.theme;
+                        root.setAttribute( 'class', this.config.theme );
+		}
+		else{
+			root.setAttribute( 'class', "particles");
+		}
+
+                var BGOutput = document.createElement("div");
+		BGOutput.classList.add(this.config.theme);
+
+                if (this.config.theme === "particles"){
+			BGOutput.innerHTML =   "<div id='particle-container'><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div><div class='particle'></div></div>";
+			} else if (this.config.theme === "firefly") {
+			BGOutput.innerHTML =   "<div class='fireflies'><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div><div class='firefly'></div></div>";
+			} else if (this.config.theme === "risingparticles") {
+			BGOutput.innerHTML =   "<div class='animation-wrapper'><div class='particle particle-1'></div><div class='particle particle-2'></div><div class='particle particle-3'></div><div class='particle particle-4'></div></div>";
+			} else if (this.config.theme === "animatedgradient") {
+			BGOutput.innerHTML =   "";
+			} else if (this.config.theme === "animatedbgcolor") {
+			BGOutput.innerHTML =   "";
+			} else if (this.config.theme === "slidingdiagonal") {
+			BGOutput.innerHTML =   "<div class='bg'></div><div class='bg bg2'></div><div class='bg bg3'></div>";
+			} else if (this.config.theme === "lavalamp") {
+			BGOutput.innerHTML =   "<div class='lamp'><div class='lava'><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob'></div><div class='blob top'></div><div class='blob bottom'></div></div></div> <svg xmlns='http://www.w3.org/2000/svg' version='1.1'> <defs> <filter id='goo'> <feGaussianBlur in='SourceGraphic' stdDeviation='10' result='blur' /> <feColorMatrix in='blur' mode='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7' result='goo' /> <feBlend in='SourceGraphic' in2='goo' /> </filter> </defs> </svg>";
+			} else if (this.config.theme === "bokeh") {
+			BGOutput.innerHTML =   "<div class='background'> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div>";
+			} else if (this.config.theme === "bokehgrey") {
+			BGOutput.innerHTML =   "<div class='background'> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span></div>";
+			} else if (this.config.theme === "risingcubes") {
+			BGOutput.innerHTML =   "<div class='area'><ul class='circles'><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li></ul></div>";
+			} else if (this.config.theme === "tritravelers") {
+			BGOutput.innerHTML =   "<div class='triangleouter'><div class='wrap'><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div><div class='tri'></div></div></div>";	
+			} else if (this.config.theme === "bubbles") {
+			BGOutput.innerHTML =   "<div class='bottom-particles'><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div></div>";					
+			} else if (this.config.theme === "snowflakes") {
+			BGOutput.innerHTML =  "<div class='snowflakes' aria-hidden='true'><div class='snowflake snowflake1'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake3'></div><div class='snowflake snowflake2'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake4'></div><div class='snowflake snowflake2'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake4'></div><div class='snowflake snowflake2'></div></div>";
+			} else if (this.config.theme === "blobs") {
+			BGOutput.innerHTML =  "<div class='blobpit'></div>";
+			} else {
+			//Default to particles
+			BGOutput.innerHTML =   "Default to particles<div class='animation-wrapper'><div class='particle particle-1'></div><div class='particle particle-2'></div><div class='particle particle-3'></div><div class='particle particle-4'></div></div>";
+		}
+
+		return BGOutput;
+
+		// pass the created content back to MM to add to DOM.
+		return wrapper;
+	},
+	
 });
