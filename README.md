@@ -26,6 +26,7 @@ risingcubes|Slowly spinning cubes from the bottom| [View on Codepen](https://cod
 tritravelers|Small triangles floating towards the center| [View on Codepen](https://codepen.io/404ryannotfound/full/zYGpGXX)
 bubbles|Small bubbles rising from the bottom| [View on Codepen](https://codepen.io/404ryannotfound/full/OJVzQJP)
 bubblescoloredbg|Smallbubbles rising from the bottom, blue color changing background|[View on codepen](https://codepen.io/404ryannotfound/full/VwLyyRV)
+beer|Turn your screen into a beer vestibule[View on Codepen](https://codepen.io/404ryannotfound/full/poJpadd)
 
 ## Dependencies / Requirements
 This module requires no special dependencies, however, it was tested using the Raspberry Pi 4 2GG. Performance cannot be guaranteed on older devices with less memory.
@@ -56,13 +57,28 @@ modules: [
    module: "MMM-CSSBackgrounds", 
    position: "fullscreen_below",
    config: {
-    theme: "animatedgradient"       
-			 /* Choose from: particles, firefly, risingparticles animatedgradient, animatedbgcolor
-			 slidingdiagonal, lavalamp, bokeh, bokehgrey, risingcubes, tritravelers, bubbles, snowflakes, blobs */
+	theme: "animatedgradient"       
+	/* Choose from: particles, firefly, risingparticles animatedgradient, animatedbgcolor, slidingdiagonal, lavalamp, bokeh, bokehgrey, risingcubes, tritravelers, bubbles, bubblescoloredbg, beer, snowflakes, blobs */
+
   }   
  }, 
 ];
 ```
+## CSS Modifications
+
+To assist with accessibuility & readability, All fonts and screen items have been set to #ffffff (white) in the CSS.
+If you wish to modify, simply edit the ```MMM-CSSBackgrounds.css file```. You can also modify the ```html``` color also, if you wish to change the background from a blue circular gradient to black.
+
+**Lavalamp** color can also be changed in the CSS, with sample colors given. (These may be configurable via config.js moving forward).
+
+## Issues known/contributing
+
+Log any issues to the [Issues](https://github.com/404ryannotfound/MMM-CSSBackgrounds/issues) page.
+
+### Known issues/Limitations
+
+Whilst care has been taken to avoid excessive animation that would degrade the Pi's performance, please test and monitor your usage of this module. **Lavalamp** in particular seems slightly intensive on the rendering, so please take care if you Pi is prone to overheating.
+
 
 ## Contributing
 
@@ -97,3 +113,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * [Rising Cubes](https://codepen.io/mohaiman/pen/MQqMyo) by Mohammed Abdul Mohaiman (Modified slightly)
 * [Tri Travelers](https://codepen.io/natewiley/pen/WvEwej) by Nate Wiley (Modified slightly)
 * [Bubbles](https://codepen.io/Paolo-Duzioni/pen/MQmbJo) by Paulo Duzioni (Modified slightly)
+* [Beer](https://codepen.io/404ryannotfound/full/poJpadd) by 404ryannotfound (bubbles by Paulo Duzioni)
