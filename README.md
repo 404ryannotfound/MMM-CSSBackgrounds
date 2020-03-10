@@ -4,9 +4,6 @@ Pure animated CSS backgrounds for use with Magic Mirror 2 on a Raspberry Pi.
  
 The MMM-CSSBackgrounds module allows you to display an animation in the background. All animations are CSS (Cascading Style Sheet) based with no dependencies on Javascript frameworks.
 
-## IMPORTANT NOTE
-> This module is currently not functioning, please DO NOT INSTALL :frowning_face:
-
 ## Screenshots
 
 COMING SOON!
@@ -16,22 +13,22 @@ COMING SOON!
 
 Name | Description | Preview
 ------------ | ------------- | -------------
-particles|Lots of small floating particles| [View on Codepen](https://codepen.io/404ryannotfound/pen/bGdYEwG)
-fireflies|Lots of small floating insects| Link coming soon...
-rain|Raindrops witha unique splash effect| Link coming soon...
-risingstars|Parallax stars rising from the bottom| Link coming soon...
-animatedgradient|Colourful ever changing gradient background color| [View on Codepen](https://codepen.io/404ryannotfound/pen/XWbzmZd)
-animatedbgcolor|Colourful ever changing background color (9 colors)|[View on Codepen](https://codepen.io/404ryannotfound/pen/XWbzmZd)
-slidingdiagonal|3 layers sliding left/right on a diagnonal| Link coming soon...
-lavalamp|Floating and falling lava blobs| Link coming soon...
-bokeh|Colourful bokeh blobs| Link coming soon...
-bokehgrey|Grey bokeh blobs| Link coming soon...
-risingcubes|Slowly spinning cubes from the bottom| Link coming soon...
-tritravelers|Small triangles floating towards the center| Link coming soon...
-bubbles|Small bubbles rising from the bottom| Link coming soon...
+particles|Lots of small floating particles| [View on Codepen](https://codepen.io/404ryannotfound/full/bGdYEwG)
+fireflies|Lots of small floating insects| [View on Codepen](https://codepen.io/404ryannotfound/full/wvapBLK)
+risingstars|Parallax stars rising from the bottom| [View on Codepen](https://codepen.io/404ryannotfound/full/NWqXPRQ)
+animatedgradient|Colourful ever changing gradient background color| [View on Codepen](https://codepen.io/404ryannotfound/full/XWbzmZd)
+animatedbgcolor|Colourful ever changing background color (9 colors)|[View on Codepen](https://codepen.io/404ryannotfound/full/XWbzmZd)
+slidingdiagonal|3 layers sliding left/right on a diagnonal| [View on Codepen](https://codepen.io/404ryannotfound/full/wvaPPjQ)
+lavalamp|Floating and falling lava blobs| [View on Codepen](https://codepen.io/404ryannotfound/full/gOpXpMM)
+bokeh|Colourful bokeh blobs| [View on Codepen](https://codepen.io/404ryannotfound/full/abOEEaV)
+bokehgrey|Grey bokeh blobs| [View on Codepen](https://codepen.io/404ryannotfound/full/YzXYYdR)
+risingcubes|Slowly spinning cubes from the bottom| [View on Codepen](https://codepen.io/404ryannotfound/full/XWbzZRx)
+tritravelers|Small triangles floating towards the center| [View on Codepen](https://codepen.io/404ryannotfound/full/zYGpGXX)
+bubbles|Small bubbles rising from the bottom| [View on Codepen](https://codepen.io/404ryannotfound/full/OJVzQJP)
+bubblescoloredbg|Smallbubbles rising from the bottom, blue color changing background|[View on codepen](https://codepen.io/404ryannotfound/full/VwLyyRV)
 
 ## Dependencies / Requirements
-This module requires no special dependencies. 
+This module requires no special dependencies, however, it was tested using the Raspberry Pi 4 2GG. Performance cannot be guaranteed on older devices with less memory.
 
 ## Operation
 This module simply adds CSS classes to the Magic Mirror `index.html` template, and uses minimal markup to create the animated backgrounds.
@@ -59,7 +56,9 @@ modules: [
    module: "MMM-CSSBackgrounds", 
    position: "fullscreen_below",
    config: {
-    text: "Hello world =)!" 
+    theme: "animatedgradient"       
+			 /* Choose from: particles, firefly, risingparticles animatedgradient, animatedbgcolor
+			 slidingdiagonal, lavalamp, bokeh, bokehgrey, risingcubes, tritravelers, bubbles, snowflakes, blobs */
   }   
  }, 
 ];
