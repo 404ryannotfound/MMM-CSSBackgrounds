@@ -6,8 +6,8 @@ The MMM-CSSBackgrounds module allows you to display an animation in the backgrou
 
 ## Screenshots
 
-COMING SOON!
-
+![Particles screenshot](/public/particles.png)
+View the [screenshots](https://github.com/404ryannotfound/MMM-CSSBackgrounds/tree/master/public) or the animated examples below.
 
 ## Themes
 
