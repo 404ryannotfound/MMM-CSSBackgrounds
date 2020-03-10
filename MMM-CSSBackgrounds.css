@@ -2923,7 +2923,15 @@ html.beer  {
   background: radial-gradient(circle, #FBB600, #DA5900);
 }
 
-
+html.beer #foam {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background: linear-gradient(#ffffff, #ffffff 5%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0));
+}
 
 /*
 Snowflakes by codeconvey https://codepen.io/codeconvey/pen/xRzQay
@@ -2933,7 +2941,6 @@ html.snowflakes.snowflakes {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
   height: 100vh;
   width: 100vw;
   z-index:-1;
