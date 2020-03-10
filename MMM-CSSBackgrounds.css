@@ -601,8 +601,8 @@ html.risingparticles .particle-4:after {
 Fireflies by Mike Golus https://codepen.io/mikegolus/pen/Jegvym
 */
 html.firefly .fireflies {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -2227,20 +2227,13 @@ Rising Cubes by Mohammed Abdul Mohaiman https://codepen.io/mohaiman/pen/MQqMyo (
 */
 
 
-html.risingcubes .context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-
-
 html.risingcubes .area{
-    
-    width: 100%;
-    height:100vh;
-    
-   
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
 }
 
 html.risingcubes .circles{
@@ -2942,7 +2935,7 @@ html.beer .bottom-particles .bubble {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  -webkit-filter: blur(4px);
+  -webkit-filter: blur(3px);
   filter: blur(4px);
 }
 
