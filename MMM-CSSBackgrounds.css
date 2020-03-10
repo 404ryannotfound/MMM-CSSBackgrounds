@@ -2688,13 +2688,13 @@ html.tritravelers .tri:nth-child(15) {
 Bubbles by Paulo Duzioni https://codepen.io/Paolo-Duzioni/pen/MQmbJo (Modified slightly)
 */
 
-html.bubbles .bottom-particles, html.bubblescoloredbg .bottom-particles  {
+html.bubbles .bottom-particles, html.bubblescoloredbg .bottom-particles, html.beer .bottom-particles {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-html.bubbles .bottom-particles .bubble, html.bubblescoloredbg .bottom-particles .bubble  {
+html.bubbles .bottom-particles .bubble, html.bubblescoloredbg .bottom-particles .bubble, html.beer .bottom-particles .bubble {
   opacity: 0;
   position: absolute;
   bottom: -1rem;
@@ -2703,140 +2703,140 @@ html.bubbles .bottom-particles .bubble, html.bubblescoloredbg .bottom-particles 
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
 }
-html.bubbles .bottom-particles .bubble:nth-child(1), html.bubblescoloredbg .bottom-particles .bubble:nth-child(1)  {
+html.bubbles .bottom-particles .bubble:nth-child(1), html.bubblescoloredbg .bottom-particles .bubble:nth-child(1), html.beer .bottom-particles .bubble:nth-child(1) {
   left: 80%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 4368ms;
           animation-delay: 4368ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(2), html.bubblescoloredbg .bottom-particles .bubble:nth-child(2) {
+html.bubbles .bottom-particles .bubble:nth-child(2), html.bubblescoloredbg .bottom-particles .bubble:nth-child(2), html.beer .bottom-particles .bubble:nth-child(2) {
   left: 49%;
   -webkit-animation: blow 10148ms infinite;
           animation: blow 10148ms infinite;
   -webkit-animation-delay: 5718ms;
           animation-delay: 5718ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(3), html.bubblescoloredbg .bottom-particles .bubble:nth-child(3) {
+html.bubbles .bottom-particles .bubble:nth-child(3), html.bubblescoloredbg .bottom-particles .bubble:nth-child(3), html.beer .bottom-particles .bubble:nth-child(3){
   left: 3%;
   -webkit-animation: blow 11217ms infinite;
           animation: blow 11217ms infinite;
   -webkit-animation-delay: 3625ms;
           animation-delay: 3625ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(4), html.bubblescoloredbg .bottom-particles .bubble:nth-child(4) {
+html.bubbles .bottom-particles .bubble:nth-child(4), html.bubblescoloredbg .bottom-particles .bubble:nth-child(4), html.beer .bottom-particles .bubble:nth-child(4) {
   left: 97%;
   -webkit-animation: blow 12814ms infinite;
           animation: blow 12814ms infinite;
   -webkit-animation-delay: 5872ms;
           animation-delay: 5872ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(5), html.bubblescoloredbg .bottom-particles .bubble:nth-child(5) {
+html.bubbles .bottom-particles .bubble:nth-child(5), html.bubblescoloredbg .bottom-particles .bubble:nth-child(5), html.beer .bottom-particles .bubble:nth-child(5)  {
   left: 96%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 1017ms;
           animation-delay: 1017ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(6), html.bubblescoloredbg .bottom-particles .bubble:nth-child(6)  {
+html.bubbles .bottom-particles .bubble:nth-child(6), html.bubblescoloredbg .bottom-particles .bubble:nth-child(6), html.beer .bottom-particles .bubble:nth-child(6) {
   left: 73%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 9967ms;
           animation-delay: 9967ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(7), html.bubblescoloredbg .bottom-particles .bubble:nth-child(7)  {
+html.bubbles .bottom-particles .bubble:nth-child(7), html.bubblescoloredbg .bottom-particles .bubble:nth-child(7), html.beer .bottom-particles .bubble:nth-child(7)   {
   left: 1%;
   -webkit-animation: blow 12502ms infinite;
           animation: blow 12502ms infinite;
   -webkit-animation-delay: 706ms;
           animation-delay: 706ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(8), html.bubblescoloredbg .bottom-particles .bubble:nth-child(8) {
+html.bubbles .bottom-particles .bubble:nth-child(8), html.bubblescoloredbg .bottom-particles .bubble:nth-child(8), html.beer .bottom-particles .bubble:nth-child(8)  {
   left: 2%;
   -webkit-animation: blow 9497ms infinite;
           animation: blow 9497ms infinite;
   -webkit-animation-delay: 6882ms;
           animation-delay: 6882ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(9), html.bubblescoloredbg .bottom-particles .bubble:nth-child(9)  {
+html.bubbles .bottom-particles .bubble:nth-child(9), html.bubblescoloredbg .bottom-particles .bubble:nth-child(9), html.beer .bottom-particles .bubble:nth-child(9)  {
   left: 66%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 9334ms;
           animation-delay: 9334ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(10), html.bubblescoloredbg .bottom-particles .bubble:nth-child(10)  {
+html.bubbles .bottom-particles .bubble:nth-child(10), html.bubblescoloredbg .bottom-particles .bubble:nth-child(10), html.beer .bottom-particles .bubble:nth-child(10)   {
   left: 17%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 8268ms;
           animation-delay: 8268ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(11), html.bubblescoloredbg .bottom-particles .bubble:nth-child(11) {
+html.bubbles .bottom-particles .bubble:nth-child(11), html.bubblescoloredbg .bottom-particles .bubble:nth-child(11), html.beer .bottom-particles .bubble:nth-child(11)  {
   left: 92%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 2120ms;
           animation-delay: 2120ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(12), html.bubblescoloredbg .bottom-particles .bubble:nth-child(12)  {
+html.bubbles .bottom-particles .bubble:nth-child(12), html.bubblescoloredbg .bottom-particles .bubble:nth-child(12), html.beer .bottom-particles .bubble:nth-child(12)    {
   left: 90%;
   -webkit-animation: blow 8904ms infinite;
           animation: blow 8904ms infinite;
   -webkit-animation-delay: 3355ms;
           animation-delay: 3355ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(13), html.bubblescoloredbg .bottom-particles .bubble:nth-child(13) {
+html.bubbles .bottom-particles .bubble:nth-child(13), html.bubblescoloredbg .bottom-particles .bubble:nth-child(13), html.beer .bottom-particles .bubble:nth-child(13)  {
   left: 22%;
   -webkit-animation: blow 6784ms infinite;
           animation: blow 6784ms infinite;
   -webkit-animation-delay: 3285ms;
           animation-delay: 3285ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(14), html.bubblescoloredbg .bottom-particles .bubble:nth-child(14)  {
+html.bubbles .bottom-particles .bubble:nth-child(14), html.bubblescoloredbg .bottom-particles .bubble:nth-child(14), html.beer .bottom-particles .bubble:nth-child(14)  {
   left: 16%;
   -webkit-animation: blow 13607ms infinite;
           animation: blow 13607ms infinite;
   -webkit-animation-delay: 5122ms;
           animation-delay: 5122ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(15), html.bubblescoloredbg .bottom-particles .bubble:nth-child(15) {
+html.bubbles .bottom-particles .bubble:nth-child(15), html.bubblescoloredbg .bottom-particles .bubble:nth-child(15), html.beer .bottom-particles .bubble:nth-child(15)  {
   left: 28%;
   -webkit-animation: blow 6431ms infinite;
           animation: blow 6431ms infinite;
   -webkit-animation-delay: 8070ms;
           animation-delay: 8070ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(16), html.bubblescoloredbg .bottom-particles .bubble:nth-child(16)  {
+html.bubbles .bottom-particles .bubble:nth-child(16), html.bubblescoloredbg .bottom-particles .bubble:nth-child(16), html.beer .bottom-particles .bubble:nth-child(16) {
   left: 10%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 11227ms;
           animation-delay: 11227ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(17), html.bubblescoloredbg .bottom-particles .bubble:nth-child(17) {
+html.bubbles .bottom-particles .bubble:nth-child(17), html.bubblescoloredbg .bottom-particles .bubble:nth-child(17), html.beer .bottom-particles .bubble:nth-child(17)  {
   left: 77%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
   -webkit-animation-delay: 1475ms;
           animation-delay: 1475ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(18), html.bubblescoloredbg .bottom-particles .bubble:nth-child(18)  {
+html.bubbles .bottom-particles .bubble:nth-child(18), html.bubblescoloredbg .bottom-particles .bubble:nth-child(18), html.beer .bottom-particles .bubble:nth-child(18)    {
   left: 49%;
   -webkit-animation: blow 9877ms infinite;
           animation: blow 9877ms infinite;
   -webkit-animation-delay: 9845ms;
           animation-delay: 9845ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(19), html.bubblescoloredbg .bottom-particles .bubble:nth-child(19) {
+html.bubbles .bottom-particles .bubble:nth-child(19), html.bubblescoloredbg .bottom-particles .bubble:nth-child(19), html.beer .bottom-particles .bubble:nth-child(19)  {
   left: 37%;
   -webkit-animation: blow 12484ms infinite;
           animation: blow 12484ms infinite;
   -webkit-animation-delay: 806ms;
           animation-delay: 806ms;
 }
-html.bubbles .bottom-particles .bubble:nth-child(20), html.bubblescoloredbg .bottom-particles .bubble:nth-child(20)  {
+html.bubbles .bottom-particles .bubble:nth-child(20), html.bubblescoloredbg .bottom-particles .bubble:nth-child(20), html.beer .bottom-particles .bubble:nth-child(20)    {
   left: 13%;
   -webkit-animation: blow 5000ms infinite;
           animation: blow 5000ms infinite;
@@ -2914,6 +2914,14 @@ html.bubblescoloredbg .bottom-particles {
 }
 
 
+/*
+Beer
+*/
+
+html.beer  {
+  background:#DA5900;
+  background: radial-gradient(circle, #FBB600, #DA5900);
+}
 
 
 

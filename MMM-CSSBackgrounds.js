@@ -59,7 +59,8 @@ Module.register("MMM-CSSBackgrounds", {
 			"effectPrefix" : "bubbles"},		// Small bubbles rising from the bottom	
 		"bubblescoloredbg"   : { 
 			"effectPrefix" : "bubblescoloredbg"},	// Small bubbles rising from the bottom, but with a changing blue background	
-
+		"beer"   : { 
+			"effectPrefix" : "beer"},		// Small bubbles rising from the bottom, beer colored background	
 		"blobs"   : { 
 			"effectPrefix" : "blobs"}		// Two blobs animatying on the screen
 	
@@ -133,6 +134,8 @@ Module.register("MMM-CSSBackgrounds", {
 			} else if (this.config.theme === "bubbles") {
 			BGOutput.innerHTML =   "<div class='bottom-particles'><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div></div>";					
 			} else if (this.config.theme === "bubblescoloredbg") {
+			BGOutput.innerHTML =   "<div class='bottom-particles'><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div></div>";					
+			} else if (this.config.theme === "beer") {
 			BGOutput.innerHTML =   "<div class='bottom-particles'><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div><div class='bubble'></div></div>";					
 			} else if (this.config.theme === "snowflakes") {
 			BGOutput.innerHTML =  "<div class='snowflakes' aria-hidden='true'><div class='snowflake snowflake1'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake3'></div><div class='snowflake snowflake2'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake4'></div><div class='snowflake snowflake2'></div><div class='snowflake snowflake1'></div><div class='snowflake snowflake4'></div><div class='snowflake snowflake2'></div></div>";
