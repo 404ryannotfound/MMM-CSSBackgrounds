@@ -2933,6 +2933,20 @@ html.beer #foam {
   background: linear-gradient(#ffffff, #ffffff 5%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0));
 }
 
+html.beer .bottom-particles .bubble {
+  opacity: 0;
+  position: absolute;
+  bottom: -1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+
 /*
 Snowflakes by codeconvey https://codepen.io/codeconvey/pen/xRzQay
 */
