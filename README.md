@@ -6,8 +6,8 @@ The MMM-CSSBackgrounds module allows you to display an animation in the backgrou
 
 ## Screenshots
 
-COMING SOON!
-
+![Particles screenshot](/public/particles.png)
+View the [screenshots](https://github.com/404ryannotfound/MMM-CSSBackgrounds/tree/master/public) or [Codepen collection](https://codepen.io/collection/nJOabE) to see the animations (also directly linked below).
 
 ## Themes
 
@@ -79,6 +79,7 @@ Log any issues to the [Issues](https://github.com/404ryannotfound/MMM-CSSBackgro
 
 Whilst care has been taken to avoid excessive animation that would degrade the Pi's performance, please test and monitor your usage of this module. **Lavalamp** in particular seems slightly intensive on the rendering, so please take care if you Pi is prone to overheating.
 
+Tested in **Landcape mode 1920 x 1080**, so Portrait and other may have issues.
 
 ## Contributing
 
