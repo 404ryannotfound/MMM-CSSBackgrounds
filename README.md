@@ -26,7 +26,7 @@ risingcubes|Slowly spinning cubes from the bottom| [View on Codepen](https://cod
 tritravelers|Small triangles floating towards the center| [View on Codepen](https://codepen.io/404ryannotfound/full/zYGpGXX)
 bubbles|Small bubbles rising from the bottom| [View on Codepen](https://codepen.io/404ryannotfound/full/OJVzQJP)
 bubblescoloredbg|Smallbubbles rising from the bottom, blue color changing background|[View on codepen](https://codepen.io/404ryannotfound/full/VwLyyRV)
-beer|Turn your screen into a beer vestibule[View on Codepen](https://codepen.io/404ryannotfound/full/poJpadd)
+beer|Turn your screen into a beer vestibule| [View on Codepen](https://codepen.io/404ryannotfound/full/poJpadd)
 
 ## Dependencies / Requirements
 This module requires no special dependencies, however, it was tested using the Raspberry Pi 4 2GG. Performance cannot be guaranteed on older devices with less memory.
